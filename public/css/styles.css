@@ -1,0 +1,72 @@
+body {
+    background-color: #5e4586;  
+    color: #ffffff
+}
+ p { 
+    color: #ffffff
+ }
+.message-textarea {
+    border-radius: 0px !important;
+    width: 70% !important;
+}
+
+.message-form,
+.btn-form {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.location {
+    margin-left: 6px;
+}
+
+.message-form-div {
+    /* position: fixed; */
+    /* bottom: 10px; */
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.btn-form {
+    margin-left: 12px;
+}
+
+.form-row {
+    position: fixed;
+    bottom: 0;
+    width: 77%;
+    background-color: #eeeeee;
+}
+
+.left-div {
+    
+}
+.right-div {
+    background-color: #ffffff;
+}
+
+.message-div {
+    min-height: 885px;
+    max-height: 885px;
+    overflow-y: scroll;
+}
+
+.right-div ol li {
+    color: #000000;
+}
+
+.btn-div {
+    margin-left: 10px;
+}
+
+#messages {
+    padding: 0 !important;
+}
+
+#messages li {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 10px 10px 10px;
+    list-style: none;
+}

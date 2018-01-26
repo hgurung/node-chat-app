@@ -6,19 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Welcome User</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <p>Welcome to chat app</p>
 
-    <ol id="messages"></ol>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 left-div">
+          <div class="people-list">
+            <h3>Active Users</h3>
+            <div id="users"></div>
+          </div>
+        </div>
 
-    <form id="message-form">
-      <input name="message" type="text" placeholder="Message" required/>
-      <button>Send</button>
-    </form>
-    <button id="send-location">Send Location</button>
+        <div class="col-md-9 right-div">
+          <div class="row">
+            <div class="message-div">
+              <ol id="messages"></ol>
+            </div>
+            <div class="col-md-12 form-row">
+                <div class="message-form-div">
+                  <form id="message-form" class="form-inline message-form">
+                    <!-- <div class="form-group"> -->
+                      <input class="form-control message-textarea" name="message" type="text" placeholder="Message" autofocus autocomplete="off" required>
+                    <!-- </div> -->
+                    
+                    <div class="form-group btn-div">
+                      <button class="btn btn-primary">Send</button>
+                      <button class="btn btn-primary location" id="send-location">Send Location</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+      
+    </div>    
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>
